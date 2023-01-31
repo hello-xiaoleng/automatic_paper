@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.cj.AppTest" time="0.002" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2021.3.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="jdk.vendor.version" value="Zulu 8.54.0.21-CA-macos-aarch64"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/xuanpu/project/automatic_paper"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/xuanpu/project/automatic_paper"/>
+    <property name="java.runtime.version" value="1.8.0_292-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/1j/y6n7g90j6xlbb4rj23tfj0hw0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="socksProxyPort" value="13659"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/xuanpu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.2.1"/>
+    <property name="http.nonProxyHosts" value="360.cn|*.360.cn|ali.com|*.ali.com|alibaba-inc.com|*.alibaba-inc.com|alibaba.com|*.alibaba.com|alibaba.net|*.alibaba.net|alibabacorp.com|*.alibabacorp.com|alicdn.com|*.alicdn.com|aliexpress.com|*.aliexpress.com|alikunlun.com|*.alikunlun.com|alipay-corp.com|*.alipay-corp.com|alipay-inc.com|*.alipay-inc.com|alipay.com|*.alipay.com|alipay.net|*.alipay.net|alipayobjects.com|*.alipayobjects.com|alitrip.com|*.alitrip.com|aliway.com|*.aliway.com|aliyun-inc.com|*.aliyun-inc.com|aliyun.com|*.aliyun.com|aliyuncs.com|*.aliyuncs.com|alizoo.com|*.alizoo.com|amap.com|*.amap.com|antfin-inc.com|*.antfin-inc.com|antfin.com|*.antfin.com|antfinancial-corp.com|*.antfinancial-corp.com|antgroup-inc.cn|*.antgroup-inc.cn|antsdaq-corp.com|*.antsdaq-corp.com|anyproxy.io|*.anyproxy.io|appx.dev|*.appx.dev|appx.run|*.appx.run|apsaraun.com|*.apsaraun.com|atatech.org|*.atatech.org|axintrip.com|*.axintrip.com|baidu.com|*.baidu.com|cainiao-inc.com|*.cainiao-inc.com|cnzz.com|*.cnzz.com|dingtalk.com|*.dingtalk.com|dingtalkapps.com|*.dingtalkapps.com|drophone-hive.com|*.drophone-hive.com|drophone.com|*.drophone.com|ebanma.com|*.ebanma.com|effirst.com|*.effirst.com|ele.me|*.ele.me|ele.to|*.ele.to|eleme.cn|*.eleme.cn|eleme.com.cn|*.eleme.com.cn|eleme.io|*.eleme.io|elemecdn.cn|*.elemecdn.cn|elemecdn.com|*.elemecdn.com|elenet.me|*.elenet.me|fliggy.com|*.fliggy.com|gts.work|*.gts.work|hemaos.com|*.hemaos.com|ialicdn.com|*.ialicdn.com|keruyun.com|*.keruyun.com|koubei-corp.com|*.koubei-corp.com|ltao.com|*.ltao.com|mayibank.net|*.mayibank.net|mini-code.com|*.mini-code.com|mini.dev|*.mini.dev|miniapp.dev|*.miniapp.dev|miniprogram.dev|*.miniprogram.dev|mmstat.com|*.mmstat.com|mybank-corp.cn|*.mybank-corp.cn|nlark.com|*.nlark.com|oceanbase-dev.com|*.oceanbase-dev.com|oceanbase.com|*.oceanbase.com|qq.com|*.qq.com|rajax-inc.com|*.rajax-inc.com|rajax-inc.net|*.rajax-inc.net|rajax.me|*.rajax.me|shishike.com|*.shishike.com|sm.cn|*.sm.cn|t-head.cn|*.t-head.cn|taobao.com|*.taobao.com|taobao.net|*.taobao.net|taobao.org|*.taobao.org|tbcdn.cn|*.tbcdn.cn|tbsite.net|*.tbsite.net|tmall.com|*.tmall.com|tmall.net|*.tmall.net|ucweb.local|*.ucweb.local|weiyun.com|*.weiyun.com|wz-inc.com|*.wz-inc.com|yisou.com|*.yisou.com|yunos-inc.com|*.yunos-inc.com|yunos.com|*.yunos.com|yuque.com|*.yuque.com|zmxy-corp.com.cn|*.zmxy-corp.com.cn|cloudprinter-hz.taobao.ali.com|*.cloudprinter-hz.taobao.ali.com|done.cdn.alibabadesign.com|*.done.cdn.alibabadesign.com|h5.dingtalk.com|*.h5.dingtalk.com|weibo.com|*.weibo.com"/>
+    <property name="user.home" value="/Users/xuanpu"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="xuanpu"/>
+    <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar"/>
+    <property name="socksProxyHost" value="127.0.0.1"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.3 install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="java.ext.dirs" value="/Users/xuanpu/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="360.cn|*.360.cn|ali.com|*.ali.com|alibaba-inc.com|*.alibaba-inc.com|alibaba.com|*.alibaba.com|alibaba.net|*.alibaba.net|alibabacorp.com|*.alibabacorp.com|alicdn.com|*.alicdn.com|aliexpress.com|*.aliexpress.com|alikunlun.com|*.alikunlun.com|alipay-corp.com|*.alipay-corp.com|alipay-inc.com|*.alipay-inc.com|alipay.com|*.alipay.com|alipay.net|*.alipay.net|alipayobjects.com|*.alipayobjects.com|alitrip.com|*.alitrip.com|aliway.com|*.aliway.com|aliyun-inc.com|*.aliyun-inc.com|aliyun.com|*.aliyun.com|aliyuncs.com|*.aliyuncs.com|alizoo.com|*.alizoo.com|amap.com|*.amap.com|antfin-inc.com|*.antfin-inc.com|antfin.com|*.antfin.com|antfinancial-corp.com|*.antfinancial-corp.com|antgroup-inc.cn|*.antgroup-inc.cn|antsdaq-corp.com|*.antsdaq-corp.com|anyproxy.io|*.anyproxy.io|appx.dev|*.appx.dev|appx.run|*.appx.run|apsaraun.com|*.apsaraun.com|atatech.org|*.atatech.org|axintrip.com|*.axintrip.com|baidu.com|*.baidu.com|cainiao-inc.com|*.cainiao-inc.com|cnzz.com|*.cnzz.com|dingtalk.com|*.dingtalk.com|dingtalkapps.com|*.dingtalkapps.com|drophone-hive.com|*.drophone-hive.com|drophone.com|*.drophone.com|ebanma.com|*.ebanma.com|effirst.com|*.effirst.com|ele.me|*.ele.me|ele.to|*.ele.to|eleme.cn|*.eleme.cn|eleme.com.cn|*.eleme.com.cn|eleme.io|*.eleme.io|elemecdn.cn|*.elemecdn.cn|elemecdn.com|*.elemecdn.com|elenet.me|*.elenet.me|fliggy.com|*.fliggy.com|gts.work|*.gts.work|hemaos.com|*.hemaos.com|ialicdn.com|*.ialicdn.com|keruyun.com|*.keruyun.com|koubei-corp.com|*.koubei-corp.com|ltao.com|*.ltao.com|mayibank.net|*.mayibank.net|mini-code.com|*.mini-code.com|mini.dev|*.mini.dev|miniapp.dev|*.miniapp.dev|miniprogram.dev|*.miniprogram.dev|mmstat.com|*.mmstat.com|mybank-corp.cn|*.mybank-corp.cn|nlark.com|*.nlark.com|oceanbase-dev.com|*.oceanbase-dev.com|oceanbase.com|*.oceanbase.com|qq.com|*.qq.com|rajax-inc.com|*.rajax-inc.com|rajax-inc.net|*.rajax-inc.net|rajax.me|*.rajax.me|shishike.com|*.shishike.com|sm.cn|*.sm.cn|t-head.cn|*.t-head.cn|taobao.com|*.taobao.com|taobao.net|*.taobao.net|taobao.org|*.taobao.org|tbcdn.cn|*.tbcdn.cn|tbsite.net|*.tbsite.net|tmall.com|*.tmall.com|tmall.net|*.tmall.net|ucweb.local|*.ucweb.local|weiyun.com|*.weiyun.com|wz-inc.com|*.wz-inc.com|yisou.com|*.yisou.com|yunos-inc.com|*.yunos-inc.com|yunos.com|*.yunos.com|yuque.com|*.yuque.com|zmxy-corp.com.cn|*.zmxy-corp.com.cn|cloudprinter-hz.taobao.ali.com|*.cloudprinter-hz.taobao.ali.com|done.cdn.alibabadesign.com|*.done.cdn.alibabadesign.com|h5.dingtalk.com|*.h5.dingtalk.com|weibo.com|*.weibo.com"/>
+    <property name="ftp.nonProxyHosts" value="360.cn|*.360.cn|ali.com|*.ali.com|alibaba-inc.com|*.alibaba-inc.com|alibaba.com|*.alibaba.com|alibaba.net|*.alibaba.net|alibabacorp.com|*.alibabacorp.com|alicdn.com|*.alicdn.com|aliexpress.com|*.aliexpress.com|alikunlun.com|*.alikunlun.com|alipay-corp.com|*.alipay-corp.com|alipay-inc.com|*.alipay-inc.com|alipay.com|*.alipay.com|alipay.net|*.alipay.net|alipayobjects.com|*.alipayobjects.com|alitrip.com|*.alitrip.com|aliway.com|*.aliway.com|aliyun-inc.com|*.aliyun-inc.com|aliyun.com|*.aliyun.com|aliyuncs.com|*.aliyuncs.com|alizoo.com|*.alizoo.com|amap.com|*.amap.com|antfin-inc.com|*.antfin-inc.com|antfin.com|*.antfin.com|antfinancial-corp.com|*.antfinancial-corp.com|antgroup-inc.cn|*.antgroup-inc.cn|antsdaq-corp.com|*.antsdaq-corp.com|anyproxy.io|*.anyproxy.io|appx.dev|*.appx.dev|appx.run|*.appx.run|apsaraun.com|*.apsaraun.com|atatech.org|*.atatech.org|axintrip.com|*.axintrip.com|baidu.com|*.baidu.com|cainiao-inc.com|*.cainiao-inc.com|cnzz.com|*.cnzz.com|dingtalk.com|*.dingtalk.com|dingtalkapps.com|*.dingtalkapps.com|drophone-hive.com|*.drophone-hive.com|drophone.com|*.drophone.com|ebanma.com|*.ebanma.com|effirst.com|*.effirst.com|ele.me|*.ele.me|ele.to|*.ele.to|eleme.cn|*.eleme.cn|eleme.com.cn|*.eleme.com.cn|eleme.io|*.eleme.io|elemecdn.cn|*.elemecdn.cn|elemecdn.com|*.elemecdn.com|elenet.me|*.elenet.me|fliggy.com|*.fliggy.com|gts.work|*.gts.work|hemaos.com|*.hemaos.com|ialicdn.com|*.ialicdn.com|keruyun.com|*.keruyun.com|koubei-corp.com|*.koubei-corp.com|ltao.com|*.ltao.com|mayibank.net|*.mayibank.net|mini-code.com|*.mini-code.com|mini.dev|*.mini.dev|miniapp.dev|*.miniapp.dev|miniprogram.dev|*.miniprogram.dev|mmstat.com|*.mmstat.com|mybank-corp.cn|*.mybank-corp.cn|nlark.com|*.nlark.com|oceanbase-dev.com|*.oceanbase-dev.com|oceanbase.com|*.oceanbase.com|qq.com|*.qq.com|rajax-inc.com|*.rajax-inc.com|rajax-inc.net|*.rajax-inc.net|rajax.me|*.rajax.me|shishike.com|*.shishike.com|sm.cn|*.sm.cn|t-head.cn|*.t-head.cn|taobao.com|*.taobao.com|taobao.net|*.taobao.net|taobao.org|*.taobao.org|tbcdn.cn|*.tbcdn.cn|tbsite.net|*.tbsite.net|tmall.com|*.tmall.com|tmall.net|*.tmall.net|ucweb.local|*.ucweb.local|weiyun.com|*.weiyun.com|wz-inc.com|*.wz-inc.com|yisou.com|*.yisou.com|yunos-inc.com|*.yunos-inc.com|yunos.com|*.yunos.com|yuque.com|*.yuque.com|zmxy-corp.com.cn|*.zmxy-corp.com.cn|cloudprinter-hz.taobao.ali.com|*.cloudprinter-hz.taobao.ali.com|done.cdn.alibabadesign.com|*.done.cdn.alibabadesign.com|h5.dingtalk.com|*.h5.dingtalk.com|weibo.com|*.weibo.com"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.cj.AppTest" name="testApp" time="0.002"/>
+</testsuite>

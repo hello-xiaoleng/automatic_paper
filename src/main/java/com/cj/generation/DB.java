@@ -21,7 +21,11 @@ public class DB {
 
     public static Map<String, List<QuestionBean>> pointQuestionIndex = new HashMap<>();
 
-    public DB() {
+    static {
+        init();
+    }
+
+    public static void init() {
 
         for (int i = 1; i <= 5000; i++) {
             QuestionBean model = new QuestionBean();
@@ -29,7 +33,7 @@ public class DB {
             model.setId(i);
 
             //试题难度系数取0.2到1之间的随机值
-            double difficulty = ((int) (Math.random() * (10 - 2 + 1)) + 3) * 0.01;
+            double difficulty = ((int) (Math.random() * (100 - 20 + 1)) + 20) * 0.01;
             model.setDifficulty(difficulty);
 
             //单选题1分

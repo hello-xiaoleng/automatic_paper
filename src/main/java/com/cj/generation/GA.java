@@ -64,53 +64,6 @@ public class GA {
         return newPopulation;
     }
 
-    /**
-     * 交叉算子
-     *
-     * @param parent1
-     * @param parent2
-     * @return
-     */
-    public static Paper crossover(Paper parent1, Paper parent2, RuleBean rule) {
-        Paper child = new Paper(parent1.getQuestionSize());
-        int s1 = (int) (Math.random() * parent1.getQuestionSize());
-        int s2 = (int) (Math.random() * parent1.getQuestionSize());
-
-        // parent1的startPos endPos之间的序列，会被遗传到下一代
-        int startPos = s1 < s2 ? s1 : s2;
-        int endPos = s1 > s2 ? s1 : s2;
-        for (int i = startPos; i < endPos; i++) {
-            child.saveQuestion(i, parent1.getQuestion(i));
-        }
-
-        // 继承parent2中未被child继承的question
-        // 防止出现重复的元素
-        String idString = rule.getPointIds().toString();
-        for (int i = 0; i < startPos; i++) {
-            if (!child.containsQuestion(parent2.getQuestion(i))) {
-                child.saveQuestion(i, parent2.getQuestion(i));
-            } else {
-                int type = getTypeByIndex(i, rule);
-                // getQuestionArray()用来选择指定类型和知识点的试题数组
-                QuestionBean[] singleArray = QuestionService.getQuestionArray(type, idString.substring(1, idString
-                        .indexOf("]")));
-                child.saveQuestion(i, singleArray[(int) (Math.random() * singleArray.length)]);
-            }
-        }
-        for (int i = endPos; i < parent2.getQuestionSize(); i++) {
-            if (!child.containsQuestion(parent2.getQuestion(i))) {
-                child.saveQuestion(i, parent2.getQuestion(i));
-            } else {
-                int type = getTypeByIndex(i, rule);
-                QuestionBean[] singleArray = QuestionService.getQuestionArray(type, idString.substring(1, idString
-                        .indexOf("]")));
-                child.saveQuestion(i, singleArray[(int) (Math.random() * singleArray.length)]);
-            }
-        }
-
-        return child;
-    }
-
     private static int getTypeByIndex(int index, RuleBean rule) {
         int type = 0;
         // 单选
@@ -164,4 +117,52 @@ public class GA {
         }
         return pop.getFitness();
     }
+
+    /**
+     * 交叉算子
+     *
+     * @param parent1
+     * @param parent2
+     * @return
+     */
+    public static Paper crossover(Paper parent1, Paper parent2, RuleBean rule) {
+        Paper child = new Paper(parent1.getQuestionSize());
+        int s1 = (int) (Math.random() * parent1.getQuestionSize());
+        int s2 = (int) (Math.random() * parent1.getQuestionSize());
+
+        // parent1的startPos endPos之间的序列，会被遗传到下一代
+        int startPos = s1 < s2 ? s1 : s2;
+        int endPos = s1 > s2 ? s1 : s2;
+        for (int i = startPos; i < endPos; i++) {
+            child.saveQuestion(i, parent1.getQuestion(i));
+        }
+
+        // 继承parent2中未被child继承的question
+        // 防止出现重复的元素
+        String idString = rule.getPointIds().toString();
+        for (int i = 0; i < startPos; i++) {
+            if (!child.containsQuestion(parent2.getQuestion(i))) {
+                child.saveQuestion(i, parent2.getQuestion(i));
+            } else {
+                int type = getTypeByIndex(i, rule);
+                // getQuestionArray()用来选择指定类型和知识点的试题数组
+                QuestionBean[] singleArray = QuestionService.getQuestionArray(type, idString.substring(1, idString
+                        .indexOf("]")));
+                child.saveQuestion(i, singleArray[(int) (Math.random() * singleArray.length)]);
+            }
+        }
+        for (int i = endPos; i < parent2.getQuestionSize(); i++) {
+            if (!child.containsQuestion(parent2.getQuestion(i))) {
+                child.saveQuestion(i, parent2.getQuestion(i));
+            } else {
+                int type = getTypeByIndex(i, rule);
+                QuestionBean[] singleArray = QuestionService.getQuestionArray(type, idString.substring(1, idString
+                        .indexOf("]")));
+                child.saveQuestion(i, singleArray[(int) (Math.random() * singleArray.length)]);
+            }
+        }
+
+        return child;
+    }
+
 }

@@ -234,16 +234,6 @@ public class QuestionBean {
                 ", type=" + type +
                 ", difficulty=" + difficulty +
                 ", pointId=" + pointIds +
-                ", stem='" + stem + '\'' +
-                ", choice1='" + choice1 + '\'' +
-                ", choice2='" + choice2 + '\'' +
-                ", choice3='" + choice3 + '\'' +
-                ", choice4='" + choice4 + '\'' +
-                ", answer='" + answer + '\'' +
-                ", userId=" + userId +
-                ", createTime=" + createTime +
-                ", userName='" + userName + '\'' +
-                ", knowledgeName='" + knowledgeName + '\'' +
                 ", score=" + score +
                 '}';
     }

@@ -76,11 +76,11 @@ public class Paper {
      */
     public double getDifficulty() {
         if (difficulty == 0) {
-            double _difficulty = 0;
+            double difficultyTotal = 0;
             for (QuestionBean question : questionList) {
-                _difficulty += question.getScore() * question.getDifficulty();
+                difficultyTotal += question.getScore() * question.getDifficulty();
             }
-            difficulty = _difficulty / getTotalScore();
+            difficulty = difficultyTotal / getTotalScore();
         }
         return difficulty;
     }
@@ -101,13 +101,16 @@ public class Paper {
      */
     public void setKpCoverage(RuleBean rule) {
         if (kPCoverage == 0) {
-            Set<String> result = new HashSet<String>();
-            result.addAll(rule.getPointIds());
+            //Set<String> result = new HashSet<String>();
+            //result.addAll(rule.getPointIds());
             Set<String> another = questionList.stream().flatMap(questionBean -> questionBean.getPointIds().stream().map(String::valueOf))
                     .collect(Collectors.toSet());
             // 交集操作
-            result.retainAll(another);
-            kPCoverage = result.size() / rule.getPointIds().size();
+            //result.retainAll(another);
+
+            List<String> collect = another.stream().filter(e -> rule.getPointIds().contains(e)).collect(Collectors.toList());
+
+            kPCoverage = collect.size() * 1.0 / rule.getPointIds().size();
         }
     }
 
@@ -128,15 +131,16 @@ public class Paper {
 
     public boolean containsQuestion(QuestionBean question) {
         if (question == null) {
-            for (int i = 0; i < questionList.size(); i++) {
-                if (questionList.get(i) == null) {
-                    return true;
-                }
-            }
+            throw new RuntimeException("question is null.");
+            //for (int i = 0; i < questionList.size(); i++) {
+            //    if (questionList.get(i) == null) {
+            //        return true;
+            //    }
+            //}
         } else {
-            for (QuestionBean aQuestionList : questionList) {
-                if (aQuestionList != null) {
-                    if (aQuestionList.equals(question)) {
+            for (QuestionBean ele : questionList) {
+                if (ele != null) {
+                    if (ele.getId() == question.getId()) {
                         return true;
                     }
                 }
@@ -194,5 +198,11 @@ public class Paper {
         this.questionList = questionList;
     }
 
+    @Override
+    public String toString() {
+        return "Paper{" +
+                "questionList=" + questionList +
+                '}';
+    }
 }
 

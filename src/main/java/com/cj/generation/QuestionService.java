@@ -18,7 +18,7 @@ public class QuestionService {
 
         List<QuestionBean> questionBeans = new ArrayList<>();
         for (String point : split) {
-            List<QuestionBean> list = DB.pointQuestionIndex.get(type + "_" + point);
+            List<QuestionBean> list = DB.pointQuestionIndex.get(type + "_" + point.trim());
             if (list != null) {
                 questionBeans.addAll(list);
             }

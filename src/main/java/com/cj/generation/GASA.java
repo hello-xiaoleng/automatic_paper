@@ -8,13 +8,11 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 遗传算法组卷实现类
- *
- * @author: lixiaolin
- * @CreateDate: 2016-4-29 下午03:57:55
- * @version: 1.0
+ * @author xuanpu
+ * @version GASA.java, v 0.1 2023年02月25日 10:05 PM xuanpu
  */
-public class GA {
+public class GASA {
+
     /**
      * 变异概率
      */
@@ -32,14 +30,6 @@ public class GA {
     public static Population evolvePopulation(Population pop, RuleBean rule) {
         Population newPopulation = new Population(pop.getLength());
         int elitismOffset = 0;
-        // 精英主义
-        if (elitism) {
-            elitismOffset = 1;
-            // 保留上一代最优秀个体
-            Paper fitness = pop.getFitness();
-            fitness.setId(0);
-            newPopulation.setPaper(0, fitness);
-        }
         // 种群交叉操作，从当前的种群pop来创建下一代种群newPopulation
         for (int i = elitismOffset; i < newPopulation.getLength(); i++) {
             // 较优选择parent

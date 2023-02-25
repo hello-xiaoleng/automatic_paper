@@ -15,9 +15,9 @@ public class Global {
     /**
      * ֪知识点权重
      */
-    public static final double KP_WEIGHT        = 0.20;
+    public static final double KP_WEIGHT        = 0.50;
     /**
      * 难度权重
      */
-    public static final double DIFFCULTY_WEIGHt = 0.80;
+    public static final double DIFFCULTY_WEIGHt = 0.50;
 }

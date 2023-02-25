@@ -26,23 +26,32 @@ public class RuleBean {
     /**
      * 规则id
      */
-    private long         id;
+    private long   id;
     /**
      * 规则对应的考试id
      */
-    private long         examId;
+    private long   examId;
     /**
      * 试卷总分
      */
-    private int          totalMark;
+    private int    totalMark;
     /**
      * 试卷期望难度系数
      */
-    private double       difficulty;
+    private double difficulty;
     /**
      * 单选题数量
      */
-    private int          singleNum;
+    private int    singleNum;
+    /**
+     * 多选题数量
+     */
+    private int    multipleNum;
+    /**
+     * 多选题分数
+     */
+    private int    multipleScore;
+
     /**
      * 单选题单个分值
      */
@@ -172,5 +181,60 @@ public class RuleBean {
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
+
+    /**
+     * Getter method for property <tt>multipleNum</tt>.
+     *
+     * @return property value of multipleNum
+     */
+    public int getMultipleNum() {
+        return multipleNum;
+    }
+
+    /**
+     * Setter method for property <tt>multipleNum </tt>.
+     *
+     * @param multipleNum value to be assigned to property multipleNum
+     */
+    public void setMultipleNum(int multipleNum) {
+        this.multipleNum = multipleNum;
+    }
+
+    /**
+     * Getter method for property <tt>multipleScore</tt>.
+     *
+     * @return property value of multipleScore
+     */
+    public int getMultipleScore() {
+        return multipleScore;
+    }
+
+    /**
+     * Setter method for property <tt>multipleScore </tt>.
+     *
+     * @param multipleScore value to be assigned to property multipleScore
+     */
+    public void setMultipleScore(int multipleScore) {
+        this.multipleScore = multipleScore;
+    }
+
+    @Override
+    public String toString() {
+        return "RuleBean{" +
+                "totalMark=" + totalMark +
+                ", difficulty=" + difficulty +
+                ", singleNum=" + singleNum +
+                ", multipleNum=" + multipleNum +
+                ", multipleScore=" + multipleScore +
+                ", singleScore=" + singleScore +
+                ", completeNum=" + completeNum +
+                ", completeScore=" + completeScore +
+                ", subjectiveNum=" + subjectiveNum +
+                ", subjectiveScore=" + subjectiveScore +
+                ", pointIds=" + pointIds +
+                '}';
+    }
+
+    private double T = 100;
 
 }

@@ -42,19 +42,23 @@ public class Population {
                 while (paper.getTotalScore() != rule.getTotalMark()) {
                     paper.getQuestionList().clear();
                     String idString = rule.getPointIds().toString();
-                    // 单选题
+                    // 单选
                     if (rule.getSingleNum() > 0) {
                         generateQuestion(1, random, rule.getSingleNum(), rule.getSingleScore(), idString,
                                 "单选题数量不够，组卷失败", paper);
                     }
+                    if (rule.getMultipleNum() > 0) {
+                        generateQuestion(2, random, rule.getMultipleNum(), rule.getMultipleScore(), idString,
+                                "多选题数量不够，组卷失败", paper);
+                    }
                     // 填空题
                     if (rule.getCompleteNum() > 0) {
-                        generateQuestion(2, random, rule.getCompleteNum(), rule.getCompleteScore(), idString,
+                        generateQuestion(3, random, rule.getCompleteNum(), rule.getCompleteScore(), idString,
                                 "填空题数量不够，组卷失败", paper);
                     }
                     // 主观题
                     if (rule.getSubjectiveNum() > 0) {
-                        generateQuestion(3, random, rule.getSubjectiveNum(), rule.getSubjectiveScore(), idString,
+                        generateQuestion(4, random, rule.getSubjectiveNum(), rule.getSubjectiveScore(), idString,
                                 "主观题数量不够，组卷失败", paper);
                     }
                 }
@@ -114,6 +118,10 @@ public class Population {
      */
     public Paper getPaper(int index) {
         return papers[index];
+    }
+
+    public Paper[] getPapers(){
+        return papers;
     }
 
     /**

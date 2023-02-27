@@ -4,6 +4,7 @@
  */
 package com.cj.generation;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -36,6 +37,12 @@ public class MainTest {
 
     public static Paper test() {
 
+        List<Double> fitness = new ArrayList<>();
+
+        List<Double> difficulty = new ArrayList<>();
+
+        List<Double> kp = new ArrayList<>();
+
         Paper resultPaper = null;
         // 迭代计数器
         int count = 0;
@@ -49,22 +56,34 @@ public class MainTest {
         System.out.println("ruleBean:" + rule);
 
         // 初始化种群
-        Population population = new Population(100, true, rule);
+        Population population = new Population(150, true, rule);
         System.out.println(
                 "初始终适应度  " + population.getFitness().getAdaptationDegree() + "," + "知识点覆盖率：" + population.getFitness().getkPCoverage()
                         + ",难度系数：" + population.getFitness().getDifficulty());
+        fitness.add(population.getFitness().getAdaptationDegree());
+        difficulty.add(population.getFitness().getDifficulty());
+        kp.add(population.getFitness().getkPCoverage());
+
         while (count < runCount && population.getFitness().getAdaptationDegree() < expand) {
             count++;
             population = GA.evolvePopulation(population, rule);
             System.out.println("第 " + count + " 次进化，适应度为： " + population.getFitness().getAdaptationDegree() + "," + "," + "知识点覆盖率："
                     + population.getFitness().getkPCoverage()
                     + ",难度系数：" + population.getFitness().getDifficulty());
+
+            fitness.add(population.getFitness().getAdaptationDegree());
+            difficulty.add(population.getFitness().getDifficulty());
+            kp.add(population.getFitness().getkPCoverage());
         }
         System.out.println("进化结束，进化次数： " + count);
         System.out.println(population.getFitness().getAdaptationDegree());
         resultPaper = population.getFitness();
 
         //printPaper(resultPaper);
+
+        System.out.println(fitness);
+        System.out.println(difficulty);
+        System.out.println(kp);
 
         return resultPaper;
 
